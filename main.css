@@ -1,0 +1,187 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f8f9fa;
+  --primary-text-color: #212529;
+  --secondary-text-color: #6c757d;
+  --accent-color: #151522;
+  --hover-accent-color: #0f2e4e;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+  height: 500px;
+  background-image: url(495bb177d07f732e5ba8.jpeg); /* Adjust the path to your hero image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Content Section */
+.content-section {
+  padding: 60px 20px;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  background-color: var(--accent-color);
+  color: white;
+  align-items: center;
+  text-align-last: center;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.content-section .MuiButton-contained {
+  width: 20%;
+  height: 50px;
+  align-self: center;
+  background-color: white;
+  border-radius: 200px;
+  color: black;
+}
+
+.content-section .MuiButton-contained:hover {
+  background-color: var(--secondary-text-color);
+}
+
+/* Story Section */
+.story-section {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-bg-color);
+  padding: 40px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.story-section img {
+  width: 40%;
+  float: right;
+}
+
+.story-section .text {
+  max-width: 600px;
+  margin-right: 20px;
+}
+
+.story-section h4 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.story-section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.story-section .highlight {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.story-section .MuiButton-contained {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+.story-section .MuiButton-contained:hover {
+  background-color: var(--hover-accent-color);
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: var(--accent-color);
+  padding: 40px 20px;
+}
+
+.contact-form .form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--primary-bg-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h4 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact-form .MuiTextField-root {
+  margin-bottom: 20px;
+}
+
+.contact-form .MuiButton-root {
+  padding: 10px 50px;
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+.contact-form .MuiButton-root:hover {
+  background-color: var(--hover-accent-color);
+}
+
